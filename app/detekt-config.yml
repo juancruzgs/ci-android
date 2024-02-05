@@ -1,0 +1,19 @@
+naming:
+  FunctionNaming:
+    active: true
+    excludes: [ '**/test/**', '**/androidTest/**', '**/commonTest/**', '**/jvmTest/**', '**/androidUnitTest/**', '**/androidInstrumentedTest/**', '**/jsTest/**', '**/iosTest/**' ]
+    functionPattern: '[a-z][a-zA-Z0-9]*'
+    excludeClassPattern: '$^'
+    ignoreAnnotated: ['Composable']
+
+style:
+  NewLineAtEndOfFile:
+    active: false
+  MagicNumber:
+    active: true
+    excludes: [ '**/test/**', '**/androidTest/**', '**/commonTest/**', '**/jvmTest/**', '**/androidUnitTest/**', '**/androidInstrumentedTest/**', '**/jsTest/**', '**/iosTest/**', '**/*.kts', '**/theme/Color.kt' ]
+    ignoreNumbers:
+      - '-1'
+      - '0'
+      - '1'
+      - '2'
